@@ -2,15 +2,11 @@
 
 A fast, modular Python scanner for detecting OpenAPI security header and CORS misconfigurations.
 
----
-
 ## Requirements
 
 * Python 3.8+
 * `httpx`
 * `pytest`
-
----
 
 ## Installation
 
@@ -27,8 +23,6 @@ cd async-openapi-scanner
 pip install httpx pytest
 ```
 
----
-
 ## Usage
 
 Run the scanner directly from the command line:
@@ -44,8 +38,6 @@ python main.py --spec https://petstore.swagger.io/v2/swagger.json --base-url htt
 | `--spec`     | URL or local path to an OpenAPI/Swagger JSON specification | `https://petstore.swagger.io/v2/swagger.json` |
 | `--base-url` | Base URL of the target API                                 | `https://petstore.swagger.io/v2`              |
 | `--output`   | Output filename for the JSON report                        | `report.json`                                 |
-
----
 
 ## Output Example
 
@@ -80,8 +72,6 @@ python main.py --spec https://petstore.swagger.io/v2/swagger.json --base-url htt
 }
 ```
 
----
-
 ## Running Tests
 
 Execute the unit test suite using `pytest`:
@@ -89,8 +79,6 @@ Execute the unit test suite using `pytest`:
 ```bash
 pytest
 ```
-
----
 
 ## License
 
